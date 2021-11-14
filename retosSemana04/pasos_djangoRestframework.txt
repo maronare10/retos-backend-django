@@ -1,0 +1,84 @@
+ # Pasos para instalar DjangoRestframework
+
+1. instalar DjangoRestframework
+
+```
+pip install djangorestframework
+pip frezze (para verificar si se ha instalado Djangorestframework)
+
+```
+2. Añadir la aplicación djangorestframework en el archivo settings.py al final de INSTALLED_APPS:
+
+```
+'rest_framework'
+
+```
+3. En el archivo views.py importar:
+
+```
+from rest_framework.decorators import api_view
+```
+4. Luego en el archivo views.py una linea antes de cada función añadir lo siguiente(menos del  def index):
+
+```
+@api_view(['GET'])
+
+```
+
+5. En el archivo views.py importar:
+
+```
+from rest_framework.response import Response
+
+```
+
+6. Luego escribir al final de la función:
+
+```
+return Response(data)
+
+```
+
+7. Creando serializer:
+
+En mi aplicación crear un archivo llamado: serializers.py
+
+Luego en ese archivo importar serializers:
+  
+  from rest_framework import serializers
+
+Crear las clases en este nuevo archivo:
+
+```
+  class PropietarioSerializer(serializers.Serializer):
+    nombre = serializers.Charfield()
+
+```
+8. En mi archivo views.py importar cada clase creada en el archivo serializers:
+
+```
+  from .serializers import PropietarioSerializer
+
+```
+9. Me ubico en el archivo views.py y añado lo siguiente:
+
+```
+    serializers = PropietarioSerializer(lstPropietarios,many=True)
+    return Response(serializers.data)
+```
+10. Cuando mi modelo tiene varios campos, primero tengo que importar en mi archivo serializar.py el modelo del que necesito jalar todos los campos (y así enlazar el serializer con un modelo), así:
+
+```
+form .models Propietario, Edificio
+```
+Y luego tengo que agregar en mi clase de mi archivo serializer lo siguiente:
+
+```
+class ProfesoresSerializer(serializers.ModelSerializer):
+  class Meta:
+    model = Propietario
+    fields = '__all__'
+```
+
+
+
