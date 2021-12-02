@@ -1,0 +1,105 @@
+const dataUsuarios = [{
+  "id": 1,
+  "name": "Artemis",
+  "email": "abartolini0@technorati.com",
+  "role": "administrador"
+}, {
+  "id": 2,
+  "name": "Putnem",
+  "email": "pvitte1@yahoo.com",
+  "role": "propietario"
+}, {
+  "id": 3,
+  "name": "Gertrude",
+  "email": "gprocter2@printfriendly.com",
+  "role": "propietario"
+}, {
+  "id": 4,
+  "name": "Kendall",
+  "email": "kgoosnell3@omniture.com",
+  "role": "propietario"
+}, {
+  "id": 5,
+  "name": "Nero",
+  "email": "nwordsley4@boston.com",
+  "role": "propietario"
+}, {
+  "id": 6,
+  "name": "Nita",
+  "email": "norleton5@mapquest.com",
+  "role": "propietario"
+}, {
+  "id": 7,
+  "name": "Madonna",
+  "email": "mnewvill6@ted.com",
+  "role": "propietario"
+}, {
+  "id": 8,
+  "name": "Sayer",
+  "email": "smardell7@google.de",
+  "role": "propietario"
+}, {
+  "id": 9,
+  "name": "Trenton",
+  "email": "tmaberley8@i2i.jp",
+  "role": "propietario"
+}, {
+  "id": 10,
+  "name": "Brice",
+  "email": "bbusain9@ed.gov",
+  "role": "propietario"
+}, {
+  "id": 11,
+  "name": "Tracie",
+  "email": "tsydrya@lycos.com",
+  "role": "propietario"
+}, {
+  "id": 12,
+  "name": "Stearn",
+  "email": "sgettensb@thetimes.co.uk",
+  "role": "propietario"
+}, {
+  "id": 13,
+  "name": "Jecho",
+  "email": "jhingeleyc@eepurl.com",
+  "role": "propietario"
+}, {
+  "id": 14,
+  "name": "Brandon",
+  "email": "bprestaged@nih.gov",
+  "role": "propietario"
+}, {
+  "id": 15,
+  "name": "Rowan",
+  "email": "rdreinie@shop-pro.jp",
+  "role": "propietario"
+}, {
+  "id": 16,
+  "name": "Sigismund",
+  "email": "scrudgef@ox.ac.uk",
+  "role": "propietario"
+}, {
+  "id": 17,
+  "name": "Raul",
+  "email": "rbartolomuccig@flickr.com",
+  "role": "propietario"
+}, {
+  "id": 18,
+  "name": "Lorita",
+  "email": "lvonweldenh@google.cn",
+  "role": "propietario"
+}, {
+  "id": 19,
+  "name": "Junette",
+  "email": "jturbefieldi@dailymail.co.uk",
+  "role": "propietario"
+}, {
+  "id": 20,
+  "name": "Gilberta",
+  "email": "gtitmusj@github.com",
+  "role": "propietario"
+}]
+
+module.exports = {
+  dataUsuarios
+};
